@@ -39,10 +39,6 @@ tasks.withType<KotlinCompile>().all {
 
 
 tasks.jar {
-    doFirst {
-
-    }
-
     manifest {
         from(manifestFile)
     }
