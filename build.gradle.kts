@@ -1,7 +1,6 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
-group = "org.example"
-version = "1.0-SNAPSHOT"
+version = "1.0"
 val manifestFile = "src/main/META-INF/Manifest.MF"
 
 plugins {
