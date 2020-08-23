@@ -4,7 +4,7 @@ version = "1.0"
 val manifestFile = "src/main/META-INF/Manifest.MF"
 
 plugins {
-    kotlin("jvm") version "1.3.72"
+    kotlin("jvm") version "1.4.0"
     id("org.jmailen.kotlinter") version "2.4.1"
     id("application")
 }
@@ -44,6 +44,8 @@ tasks.jar {
 }
 
 tasks.register<Jar>("fullJar") {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+
     archiveClassifier.set("full")
 
     manifest {
